@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <h1 class="logo">Name Web</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="#"><i class='bx bxs-bot'></i> My Bot</a></li>
+                <li><a href="#"><i class='bx bxs-store'></i> Market Place</a></li>
+                <li><a href="#"><i class='bx bxs-dollar-circle'></i> Pricing</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2>My Bot</h2>
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/40?u=cornellia" alt="User Avatar">
+                <span>Cornellia Hubbert</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </header>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="trading">Trading bots (4)</button>
+            <button class="tab-btn" data-tab="deleted">Deleted</button>
+        </div>
+
+        <div class="content-panel active" id="trading">
+            <div class="bot-grid">
+                <div class="bot-card status-up">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <p class="card-change">+1.27 (1.20%)</p>
+                    <p class="card-value">155.77 <sup>THB</sup></p>
+                </div>
+                <div class="bot-card status-down">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <p class="card-change">-1.27 (1.20%)</p>
+                    <p class="card-value">155.77 <sup>THB</sup></p>
+                </div>
+                <div class="bot-card status-up">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <p class="card-change">+1.27 (1.20%)</p>
+                    <p class="card-value">155.77 <sup>THB</sup></p>
+                </div>
+                <div class="bot-card status-neutral">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <p class="card-change">0.00 (0.00%)</p>
+                    <p class="card-value">155.77 <sup>THB</sup></p>
+                </div>
+                <div class="bot-card add-new">
+                    <div class="add-icon"><i class='bx bx-plus'></i></div>
+                    <p>Add New Bot</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-panel" id="deleted">
+             <div class="bot-grid">
+                <div class="bot-card status-up">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <button class="btn btn-restore">Restore</button>
+                </div>
+                 <div class="bot-card status-down">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <button class="btn btn-restore">Restore</button>
+                </div>
+                 <div class="bot-card status-neutral">
+                    <div class="card-header"><h3>PTT</h3><i class='bx bx-stats'></i></div>
+                    <button class="btn btn-restore">Restore</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

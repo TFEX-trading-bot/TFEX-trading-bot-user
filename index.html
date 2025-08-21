@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="auth-body">
+    <div class="auth-container">
+        <h1 class="auth-title">Sign in</h1>
+        <p class="auth-subtitle">Don't have an account? <a href="signup.html">Sign up</a></p>
+
+        <form action="dashboard.html" class="auth-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <i class='bx bxs-envelope'></i>
+                <input type="email" id="email" placeholder=" " required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <i class='bx bxs-lock-alt'></i>
+                <input type="password" id="password" placeholder=" " required>
+                <i class='bx bx-hide eye-icon' id="togglePassword"></i>
+            </div>
+
+            <div class="form-options">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+
+        <div class="social-login">
+            <button class="social-btn"><i class='bx bxl-google'></i></button>
+            <button class="social-btn"><i class='bx bxl-apple'></i></button>
+            <button class="social-btn"><i class='bx bxl-facebook'></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

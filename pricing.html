@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dashboard-body">
+
+    <aside class="sidebar">
+        <h1 class="logo">Name Web</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html"><i class='bx bxs-bot'></i> My Bot</a></li>
+                <li><a href="marketplace.html"><i class='bx bxs-store'></i> Market Place</a></li>
+                <li class="active"><a href="pricing.html"><i class='bx bxs-dollar-circle'></i> Pricing</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Pricing</h2>
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/40?u=cornellia" alt="User Avatar">
+                <span>Cornellia Hubbert</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </header>
+
+        <div class="pricing-container">
+            <div class="pricing-toggle">
+                <button class="toggle-btn active" data-period="monthly">Monthly</button>
+                <button class="toggle-btn" data-period="yearly">Yearly</button>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <p class="price">99.00 <span>฿</span></p>
+                    <button class="btn btn-secondary">Get Started</button>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Pro</h3>
+                    <p class="price">199.00 <span>฿</span></p>
+                    <button class="btn btn-primary">Get Started</button>
+                </div>
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <p class="price">299.00 <span>฿</span></p>
+                    <button class="btn btn-secondary">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
