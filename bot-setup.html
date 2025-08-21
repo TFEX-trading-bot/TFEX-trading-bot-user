@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Setup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dashboard-body">
+    <aside class="sidebar">
+        <h1 class="logo">Name Web</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="#"><i class='bx bxs-bot'></i> My Bot</a></li>
+                <li><a href="marketplace.html"><i class='bx bxs-store'></i> Market Place</a></li>
+                <li><a href="pricing.html"><i class='bx bxs-dollar-circle'></i> Pricing</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2>Bot Setup</h2>
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/40?u=cornellia" alt="User Avatar">
+                <span>Cornellia Hubbert</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </header>
+
+        <div class="setup-form-container">
+            <h3>Create Your Trading Bot</h3>
+            <p class="form-subtitle">Start by connecting your broker and setting up your bot.</p>
+            
+            <form class="bot-setup-form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="stock">Stock</label>
+                        <input type="text" id="stock" placeholder="e.g. PTT">
+                    </div>
+                    <div class="form-group">
+                        <label for="max-amount">Max trading amount</label>
+                        <input type="text" id="max-amount" placeholder="e.g. 10,000">
+                    </div>
+                    <div class="form-group">
+                        <label for="broker-id">Broker ID</label>
+                        <input type="text" id="broker-id">
+                    </div>
+                    <div class="form-group">
+                        <label for="account-number">Account Number</label>
+                        <input type="text" id="account-number">
+                    </div>
+                </div>
+
+                <hr class="form-divider">
+
+                 <div class="form-grid">
+                     <div class="form-group">
+                        <label for="broker-id-2">Broker ID</label>
+                        <input type="text" id="broker-id-2">
+                    </div>
+                    <div class="form-group">
+                        <label for="account-number-2">Account Number</label>
+                        <input type="text" id="account-number-2">
+                    </div>
+                 </div>
+                
+                <button type="button" class="btn btn-secondary">Fetch Connected Brokers</button>
+
+                <div class="form-group">
+                    <label>Acceptable Risk</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="risk" value="low" checked> Low</label>
+                        <label><input type="radio" name="risk" value="medium"> Medium</label>
+                        <label><input type="radio" name="risk" value="high"> High</label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Create Bot</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

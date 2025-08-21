@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dashboard-body">
+    <aside class="sidebar">
+        <h1 class="logo">Name Web</h1>
+        <nav class="sidebar-nav">
+            <details class="collapsible-menu" open>
+                <summary>
+                    <i class='bx bxs-bot'></i> My Bot
+                </summary>
+                <ul class="sub-nav">
+                    <li class="active"><a href="bot-dashboard.html"><i class='bx bx-git-branch'></i> PTT</a></li>
+                    <li><a href="#"><i class='bx bx-git-branch'></i> PTT</a></li>
+                    <li><a href="#"><i class='bx bx-git-branch'></i> PTT</a></li>
+                </ul>
+            </details>
+            <ul>
+                <li><a href="marketplace.html"><i class='bx bxs-store'></i> Market Place</a></li>
+                <li><a href="pricing.html"><i class='bx bxs-dollar-circle'></i> Pricing</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2 class="bot-title">PTT | AI Strategy <small>ID : 12345678</small></h2>
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/40?u=cornellia" alt="User Avatar">
+                <span>Cornellia Hubbert</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </header>
+
+        <div class="bot-controls">
+            <div class="bot-tabs-new">
+                <a href="bot-dashboard.html" class="bot-tab-btn-new active">Dashboard</a>
+                <a href="bot-configuration.html" class="bot-tab-btn-new">Configuration</a>
+            </div>
+            <button class="btn-icon-delete"><i class='bx bx-trash'></i></button>
+        </div>
+
+        <div class="summary-grid">
+            <div class="summary-card">
+                <h4>Current Profits</h4>
+                <div class="profit-details">
+                    <div class="profit-icon">
+                        <i class='bx bx-trending-up'></i>
+                    </div>
+                    <div>
+                        <p class="profit-label">Total Profit</p>
+                        <p class="profit-amount">1,278฿ (1.20%)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-card">
+                <h4>Bot Status</h4>
+                <div class="bot-status-display">
+                    <i class='bx bx-bot'></i>
+                    <span><strong>Bot is active</strong> 03/03/2025 3:50:12 PM</span>
+                </div>
+                <div class="bot-enable-toggle">
+                    <p>Bot is Enable</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <h3>Order History</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Price_at</th>
+                        <th>Amount</th>
+                        <th>Date-time</th>
+                        <th class="text-right">Action</th>
+                        <th class="text-right">Total Profit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200 THB</td>
+                        <td>50</td>
+                        <td>03/03/2025 3:50:12 PM</td>
+                        <td class="text-right"><span class="action-pill buy">Buy</span></td>
+                        <td class="text-right"><span class="profit-pill profit">+1.27 THB</span></td>
+                    </tr>
+                    <tr>
+                        <td>200 THB</td>
+                        <td>50</td>
+                        <td>02/03/2025 3:50:12 PM</td>
+                        <td class="text-right"><span class="action-pill sell">Sell</span></td>
+                        <td class="text-right"><span class="profit-pill loss">-1.27 THB</span></td>
+                    </tr>
+                    <tr>
+                        <td>200 THB</td>
+                        <td>50</td>
+                        <td>21/02/2025 3:50:12 PM</td>
+                        <td class="text-right"><span class="action-pill buy">Buy</span></td>
+                        <td class="text-right"><span class="profit-pill profit">+1.27 THB</span></td>
+                    </tr>
+                    <tr>
+                        <td>200 THB</td>
+                        <td>50</td>
+                        <td>12/01/2025 3:50:12 PM</td>
+                        <td class="text-right"><span class="action-pill buy">Buy</span></td>
+                        <td class="text-right"><span class="profit-pill loss">-1.27 THB</span></td>
+                    </tr>
+                    <tr>
+                        <td>200 THB</td>
+                        <td>50</td>
+                        <td>01/01/2025 3:50:12 PM</td>
+                        <td class="text-right"><span class="action-pill buy">Buy</span></td>
+                        <td class="text-right"><span class="profit-pill profit">+1.27 THB</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="table-footer">
+                <a href="#" class="view-more-link">View More</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

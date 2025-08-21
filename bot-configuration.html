@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Configuration</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="dashboard-body">
+    <aside class="sidebar">
+        <h1 class="logo">Name Web</h1>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><a href="dashboard.html"><i class='bx bxs-bot'></i> My Bot</a></li>
+                <li><a href="marketplace.html"><i class='bx bxs-store'></i> Market Place</a></li>
+                <li><a href="pricing.html"><i class='bx bxs-dollar-circle'></i> Pricing</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <header class="main-header">
+            <h2 class="bot-title">PTT | <small>AI Strategy ID: 12345678</small></h2>
+            <div class="user-profile">
+                <img src="https://i.pravatar.cc/40?u=cornellia" alt="User Avatar">
+                <span>Cornellia Hubbert</span>
+                <i class='bx bx-chevron-down'></i>
+            </div>
+        </header>
+
+        <div class="bot-tabs">
+            <a href="bot-dashboard.html" class="bot-tab-btn">Dashboard</a>
+            <a href="bot-configuration.html" class="bot-tab-btn active">Configuration</a>
+        </div>
+
+        <form class="config-form">
+            <div class="config-section">
+                <div class="config-header">
+                    <h4>Notification</h4>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <p>Notification on trade</p>
+            </div>
+
+            <div class="config-section">
+                <h4>Buy Setting</h4>
+                <div class="form-group">
+                    <label>Amount USDT amount per order</label>
+                    <input type="text">
+                </div>
+                 <div class="form-group">
+                    <label>Maximum USDT amount allocated</label>
+                    <input type="text">
+                </div>
+            </div>
+            
+            <div class="config-section">
+                <div class="config-header">
+                    <h4>Stop Loss</h4>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Stop loss percentage</label>
+                    <select>
+                        <option>Select percentage</option>
+                        <option>5%</option>
+                        <option>10%</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="config-section">
+                 <div class="config-header">
+                    <h4>Auto Close</h4>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>Close position after X hours ago</label>
+                    <select>
+                        <option>Select hours</option>
+                        <option>1 hour</option>
+                        <option>2 hours</option>
+                    </select>
+                </div>
+            </div>
+            
+             <div class="config-section">
+                <h4>API Setting</h4>
+                <div class="form-group">
+                    <label>Binance Api Key</label>
+                    <input type="text">
+                </div>
+                 <div class="form-group">
+                    <label>Binance Api Secret</label>
+                    <input type="password">
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
